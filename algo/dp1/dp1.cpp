@@ -18,6 +18,11 @@ int main(){
     }
     memset(dp, 0x3f, sizeof(dp));
     dp[0][0] = dp[0][1] = dp[0][2] = 0;
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << dp[i][j] << endl;
+        }
+    }
     for (int i = 1; i <= n; i++)
     {
         //看看今天是否能工作
