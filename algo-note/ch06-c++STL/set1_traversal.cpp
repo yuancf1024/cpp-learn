@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int main() { set<int> st;
+int main() { 
+    set<int> st;
     st.insert(3); // insert(x) 将x插入set中
     st.insert(5);
     st.insert(2);
