@@ -21,9 +21,9 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
 
-    serv_sock = socket(PF_INET, SOCK_STREAM, 0);
+    serv_sock = socket(PF_INET, SOCK_STREAM, 0); // 调用socket函数创建套接字
     if (serv_sock == -1)
-        error_handling("socket() error"); // 调用socket函数创建套接字
+        error_handling("socket() error"); 
     
     memset(&serv_addr, 0, sizeof(serv_addr));
     serv_addr.sin_family = AF_INET;
