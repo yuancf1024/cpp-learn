@@ -22,7 +22,8 @@ public:
 };
 
 int main() { 
-    Animal cAnimal;
+    Animal cAnimal; // 类，它不能生成对象。如果一个类中含有纯虚函数，
+    // 那么任何试图对该类进行实例化的语句都是错误的
     return 0;
 }
 
