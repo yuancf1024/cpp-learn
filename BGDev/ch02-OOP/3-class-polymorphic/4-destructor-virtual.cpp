@@ -5,7 +5,7 @@ using namespace std;
 class Base {
 public:
     Base() { cout << "Base::Base()" << endl; }
-    ~Base() { cout << "Base::~Base()" << endl; }
+    virtual ~Base() { cout << "Base::~Base()" << endl; } // 解决内存泄漏 只要给基类一个virtual析构函数即可
 };
 
 class Derive:public Base {
@@ -31,5 +31,11 @@ int main() {
  * 而解决此问题的方法很简单，只要给基类一个virtual析构函数即可
 Base::Base()
 Derive::Derive()
+Base::~Base()
+
+// 加上virtual之后
+Base::Base()
+Derive::Derive()
+Derive::~Derive()
 Base::~Base()
  */
