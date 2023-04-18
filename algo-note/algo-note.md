@@ -199,7 +199,7 @@ for (int i = 0; i < N; i++) {
 > 2. 重置数组一般使用memset 函数 或 fill函数.
 
 
-## ch02-simulation
+## ch03-simulation
 
 
 
